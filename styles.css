@@ -29,7 +29,7 @@ body {
 }
 
 .profesor {
-    width: 500px;
+    width: 100%;
 }
 
 #circle {
@@ -37,8 +37,9 @@ body {
     display: flex;
     background-color: #f4f8a1;
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
     align-self: center;
     align-content: center;
     justify-content: center; /* Centra horizontalmente */

@@ -4,7 +4,7 @@ let mensaje = [
     "...",
     "ejem",
     "Hoy es un día especial para ti.",
-    
+
     "Debes elegir tu primer Pokémon.",
     "¿Estás listo para esta gran aventura?"
 ];
@@ -15,9 +15,14 @@ let index = 0;
 let esperando = false;
 
 function mostrarSiguienteParte(forzado = false) {
-    if (esperando && !forzado) return; // Evitar que se muestre texto antes de tiempo
+    if (esperando && !forzado) return; // Evitar que se muestre texto antes de tiempo}
 
+    let profesorContainer = document.getElementById("profesor-container");
+    let seleccionContainer = document.getElementById("seleccion-container");
+    seleccionContainer.style.display = "none";
+    profesorContainer.style.display = "Lock";
     if (index < mensaje.length) {
+
         mensajeElement.innerHTML = mensaje[index]; // Mostrar la línea actual
         esperando = true; // Bloquear hasta que termine la espera
         setTimeout(() => {

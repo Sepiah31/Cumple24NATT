@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="profesor-container">
+        <div class="profesor-col">
+            <img src="https://static.wikia.nocookie.net/espokemon/images/b/b8/Profesor_Abedul_ROZA.png/revision/latest?cb=20140714150216" 
+                 alt="Profesor Abedul" class="profesor">
+        </div>
+        <div class="texto-col">
+            <p id="mensaje-profesor"></p>
+            <button id="boton-continuar">Continuar</button>
+        </div>
+    </div>
+    
+
+    <!-- Selección de Pokémon (Oculta al inicio) -->
+    <div id="seleccion-container" class="hidden">
+        <h1>¡Elige tu Pokémon!</h1>
+        <div class="pokemon-container">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png" 
+                 alt="Treecko" class="pokemon" onclick="seleccionarPokemon('Treecko')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png" 
+                 alt="Torchic" class="pokemon" onclick="seleccionarPokemon('Torchic')">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png" 
+                 alt="Mudkip" class="pokemon" onclick="seleccionarPokemon('Mudkip')">
+        </div>
+    </div>
+
+
+    <audio id="background-audio" loop>
+        <source src="https://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection/101%20Opening.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

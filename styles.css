@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#profesor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.profesor-col {
+    flex: 1;
+    text-align: center;
+}
+
+.texto-col {
+    flex: 1;
+    text-align: left;
+}
+
+.profesor {
+    width: 500px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ffcc00;
+    border: 2px solid #000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pokemon {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.pokemon:hover {
+    transform: scale(2);
+}

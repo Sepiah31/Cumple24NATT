@@ -31,20 +31,38 @@
         <h1>¡Elige tu Pokémon!</h1>
         <div class="pokemon-container">
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png" 
-                 alt="Treecko" class="pokemon" onclick="seleccionarPokemon('Treecko')">
+                 alt="Treecko" class="pokemon treecko" onclick="seleccionarPokemon('Treecko')">
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png" 
-                 alt="Torchic" class="pokemon" onclick="seleccionarPokemon('Torchic')">
+                 alt="Torchic" class="pokemon torchic" onclick="seleccionarPokemon('Torchic')">
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png" 
-                 alt="Mudkip" class="pokemon" onclick="seleccionarPokemon('Mudkip')">
+                 alt="Mudkip" class="pokemon mudkip" onclick="seleccionarPokemon('Mudkip')">
         </div>
     </div>
 
 
-    <audio id="background-audio" loop>
-        <source src="https://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection/101%20Opening.mp3" type="audio/mpeg">
+    <audio id="background-audio" loop autoplay>
+        <source src="https://kappa.vgmsite.com/soundtracks/pokemon-emerald-enhanced-soundtrack/zilrjwsyjs/1-04.%20Welcome%20To%20The%20World%20of%20Pokemon%21%20~%20Route%20123.mp3" type="audio/mpeg">
         Tu navegador no soporta audio HTML5.
     </audio>
 
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+              publicKey: "bK8l9ukHQWaoqqtDpEY",
+            });
+       })();
+    </script>
+
 </body>
 </html>

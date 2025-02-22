@@ -100,31 +100,12 @@ function mensaje_final(){
     <span style="color: white; font-size: 16px;">Has elegido a tu compañero para esta aventura cumpleañera</span><br>
     <span style="color: white; font-size: 16px;">¡¡¡ Te deseo mucho exito Entrenadora Natt!!!</span><br><br>
     <span style="color: yellow; font-size: 16px;">Tu compañero de viaje pronto llegara ti:33</span><br><br>
-    <span style="color: red; font-size: 10px;">Pd: mi ayudante te ama mucho mas que tu siempre :33</span>
+    <span style="color: white; font-size: 10px;">Pd: mi ayudante te ama mucho mas que tu siempre :33</span>
   `;
   contenedorFelicitacion.appendChild(mensajeFelicitacion);
 
   // Añadir el contenedor de felicitación al contenedor de selección
   seleccionContainer.appendChild(contenedorFelicitacion);
-
-  // Capturar la pantalla y enviar por correo
-  html2canvas(document.body).then(canvas => {
-    let dataURL = canvas.toDataURL("image/png");
-    enviarCorreo(dataURL);
-  });
-}
-
-function enviarCorreo(dataURL) {
-  emailjs.send("service_fc1dp9a", "template_j464yo9", {
-    to_name: "Recipient Name",
-    from_name: "Your Name",
-    message: "Aquí está tu captura de pantalla",
-    screenshot: dataURL
-  }).then(response => {
-    console.log('Correo enviado exitosamente', response.status, response.text);
-  }).catch(error => {
-    console.log('Error al enviar el correo', error);
-  });
 }
 
 // Iniciar el diálogo

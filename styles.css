@@ -3,38 +3,39 @@
 body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    background-color: #000000;
+    background-color: #f50000;
     color: white;
 }
 
 #profesor-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    gap: 10px;
+    align-items: center;
+    height: 50%;
 }
 
 .profesor-col {
-    flex: 1;
     display: flex;
-    padding-left: 100px;
-    padding-right: 0px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 10px;
     text-align: center;
 }
 
 .texto-col {
-    flex: 1;
-    text-align: left;
+    text-align: center;
+    width: 500px;
 }
 
 .profesor {
-    width: 100%;
+    width: 500px;
+    justify-content: center;
 }
 
 #circle {
 
     display: flex;
+    border:1px solid rgb(0, 0, 0); 
     background-color: #f4f8a1;
     border-radius: 50%;
     width: 100%;
@@ -54,8 +55,8 @@ body {
     font-size: 14px;
     line-height: 1.5;
     display: inline-block;
-    width: 100%;
-    box-shadow: 4px 4px 0 black;
+    width: 90%;
+    box-shadow: 4px 4px 0 rgb(251, 253, 133);
 }
 
 button {

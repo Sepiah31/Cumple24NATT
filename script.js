@@ -1,10 +1,13 @@
 let mensaje = [
-    "Hola, soy el Profesor Abedul y el mi asistente Sebastian",
+    "Hola Natalia , soy el Profesor Abedul ",
+    " y el mi asistente Sebastian",
     "¿EH? No esta ...",
     "...",
-    "ejem",
-    "Hoy es un día especial para ti.",
-
+    "* ejem *",
+    "Nos acercamos al gran dia 23",
+    "¡¡¡ Que emocion !!! ",
+    "Como todo un SOL , a esta edad tienes una labor ... ",
+    "¡Natalia! estas apunto de convertire en entrenadora",
     "Debes elegir tu primer Pokémon.",
     "¿Estás listo para esta gran aventura?"
 ];
